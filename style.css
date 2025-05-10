@@ -1,0 +1,271 @@
+/* Base styles and resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f1eb;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px; /* Space for fixed footer */
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-square {
+    width: 36px;
+    height: 36px;
+    background-color: #0047FF;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Navigation Menu */
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a.active {
+    color: #0047FF;
+    font-weight: bold;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bg-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #e6e0d8;
+    z-index: -1;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+/* Content Section */
+.content-section {
+    width: 450px;
+    max-width: 100%;
+}
+
+.hello-text {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.footer-column {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .profile-section {
+        padding: 30px 3%;
+    }
+    
+    .content-section {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    .profile-card {
+        margin-right: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hello-text {
+        font-size: 42px;
+    }
+    
+    footer {
+        padding: 15px 3%;
+    }
+    
+    .footer-column {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-section {
+        padding: 20px 2%;
+    }
+    
+    .hello-text {
+        font-size: 36px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #0047FF;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #333;
+    color: #333;
+}
