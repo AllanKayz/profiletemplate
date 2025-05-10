@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Letwin Pondo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include your existing CSS here -->
+    <style>
+        /* Add to your existing styles */
+        .projects-section {
+            padding: 100px 5% 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .projects-title {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .projects-subtitle {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .project-tag {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .project-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #0047FF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .projects-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your header here -->
+    
+    <main>
+        <section class="projects-section">
+            <div class="projects-header">
+                <h1 class="projects-title">Projects</h1>
+                <p class="projects-subtitle">Featured Work</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Urban Planning Analysis</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">GIS</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Analysis</span>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive spatial analysis for urban development planning using advanced GIS techniques.
+                        </p>
+                        <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Add more project cards -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Include your footer here -->
+    
+    <!-- Include your JavaScript here -->
+</body>
+</html>
