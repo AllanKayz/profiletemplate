@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Nelson | Project Manager</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f1eb;
+            color: #222;
+            line-height: 1.6;
+        }
+        
+        /* Header and Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: white;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-square {
+            width: 36px;
+            height: 36px;
+            background-color: #0047FF;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        
+        .logo-text span {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            font-weight: normal;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        nav ul li a.active {
+            color: #0047FF;
+            font-weight: bold;
+        }
+        
+        /* Profile Card Section */
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 5%;
+            position: relative;
+        }
+        
+        .bg-rectangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35%;
+            height: 100%;
+            background-color: #e6e0d8;
+            z-index: -1;
+        }
+        
+        .profile-card {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-right: 50px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .profile-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        /* Content Section */
+        .content-section {
+            width: 450px;
+        }
+        
+        .hello-text {
+            font-size: 52px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .subheading {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .button-group {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: #0047FF;
+            color: white;
+        }
+        
+        .btn-outline {
+            border: 1px solid #333;
+            color: #333;
+        }
+        
+        .description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+            background-color: white;
+            margin-top: 50px;
+        }
+        
+        .footer-column {
+            text-align: center;
+        }
+        
+        .footer-column h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-column p {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer-social a {
+            margin: 0 5px;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        
+        .copyright {
+            text-align: left;
+            font-size: 10px;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-square">M</div>
+            <div class="logo-text">
+                Maya Nelson
+                <span>PROJECT MANAGER</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">ABOUT ME</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="profile-section">
+            <div class="bg-rectangle"></div>
+            
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="/api/placeholder/150/150" alt="Maya Nelson">
+                </div>
+                <h2 class="profile-name">Maya Nelson</h2>
+                <p class="profile-title">PROJECT MANAGER</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h1 class="hello-text">Hello</h1>
+                <p class="subheading">Here's who I am & what I do</p>
+                
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">RESUME</a>
+                    <a href="#" class="btn btn-outline">PROJECTS</a>
+                </div>
+                
+                <p class="description">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.</p>
+                
+                <p class="description">I'm a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            ©2023 by Maya Nelson.<br>
+            Proudly created with Wix.com
+        </div>
+        
+        <div class="footer-column">
+            <h3>Call</h3>
+            <p>123-456-7890</p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Write</h3>
+            <p>info@mysite.com</p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Follow</h3>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter">t</a>
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">ig</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
