@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Letwin Pondo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include your existing CSS here -->
+    <style>
+        /* Add to your existing styles */
+        .resume-section {
+            padding: 100px 5% 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .resume-title {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .resume-subtitle {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .resume-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .resume-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #0047FF;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .experience-company {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .experience-date {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        @media screen and (max-width: 768px) {
+            .resume-title {
+                font-size: 32px;
+            }
+
+            .resume-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your header here -->
+    
+    <main>
+        <section class="resume-section">
+            <div class="resume-header">
+                <h1 class="resume-title">Resume</h1>
+                <p class="resume-subtitle">My Professional Journey</p>
+            </div>
+
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <h3>Experience</h3>
+                    <div class="experience-item">
+                        <h4 class="experience-title">Senior Geospatial Analyst</h4>
+                        <p class="experience-company">GeoTech Solutions</p>
+                        <p class="experience-date">2020 - Present</p>
+                        <ul>
+                            <li>Led spatial analysis projects for urban planning</li>
+                            <li>Developed GIS solutions for environmental monitoring</li>
+                            <li>Managed team of 5 junior analysts</li>
+                        </ul>
+                    </div>
+                    <!-- Add more experience items -->
+                </div>
+
+                <div class="resume-card">
+                    <h3>Education</h3>
+                    <div class="experience-item">
+                        <h4 class="experience-title">MSc in Geographic Information Science</h4>
+                        <p class="experience-company">University of Example</p>
+                        <p class="experience-date">2018 - 2020</p>
+                    </div>
+                    <!-- Add more education items -->
+                </div>
+
+                <div class="resume-card">
+                    <h3>Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">GIS</span>
+                        <span class="skill-tag">Remote Sensing</span>
+                        <span class="skill-tag">Spatial Analysis</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">QGIS</span>
+                        <span class="skill-tag">ArcGIS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include your footer here -->
+    
+    <!-- Include your JavaScript here -->
+</body>
+</html>
