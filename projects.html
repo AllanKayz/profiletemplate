@@ -281,5 +281,21 @@ nav ul li a.active {
     <!-- Include your footer here -->
     
     <!-- Include your JavaScript here -->
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const nav = document.querySelector('nav');
+        const navList = document.querySelector('nav ul');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (!nav.contains(event.target) && navList.classList.contains('active')) {
+            navList.classList.remove('active');
+        }
+    });
+</script>
 </body>
 </html>
